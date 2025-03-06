@@ -1,6 +1,6 @@
 /*!
   hashjump v0.0.3 (https://hashjump.js.org)
-  by Kodie Grantham (https://kodieg.com)
+  by Five Fifteen (https://fivefifteen.com)
 */
 
 const hashjump = (targetHashes, opts) => {
