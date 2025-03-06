@@ -1,12 +1,35 @@
 <!doctype html>
 <html>
   <head>
-    <title>hashjump - A tiny, dependency-free JavaScript module for handling anchor links and scrolling elements into view.</title>
+    <title>HashJump — A tiny, dependency-free JavaScript module for handling anchor links and scrolling elements into view.</title>
+    <meta name="viewport" content="width=device-width" />
+    <meta name="theme-color" content="#000000" />
+    <meta name="robots" content="index, follow" />
+    <meta name="description" content="A tiny, dependency-free JavaScript module for handling anchor links and scrolling elements into view." />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="HashJump — A tiny, dependency-free JavaScript module for handling anchor links and scrolling elements into view." />
+    <meta property="og:description" content="A tiny, dependency-free JavaScript module for handling anchor links and scrolling elements into view." />
+    <meta property="og:url" content="https://hashjump.js.org/" />
+    <meta property="og:site_name" content="HashJump" />
+    <link rel="canonical" href="https://hashjump.js.org/" />
+    <link rel="icon" href="./assets/hashjump.png" media="(prefers-color-scheme: light)" />
+    <link rel="icon" href="./assets/hashjump-white.png" media="(prefers-color-scheme: dark)" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-fork-ribbon-css/0.2.3/gh-fork-ribbon.min.css" />
     <style type="text/css">
+      html {
+        scrollbar-color: #000 #fff;
+        -webkit-tap-highlight-color: transparent;
+      }
+
       body {
-        background-color: #e9ecef;
+        background-color: #fff;
+        font-family: "Montserrat", sans-serif;
       }
 
       body.wide-mode {
@@ -14,8 +37,27 @@
       }
 
       a {
-        color: #5185b3;
+        color: #000;
         text-decoration: underline;
+      }
+
+      .header, .footer {
+        background-color: #000;
+        color: #fff;
+        text-align: center;
+      }
+
+      .header .container > *, .footer .container > * {
+        margin: 1rem 0;
+      }
+
+      .header a, .footer a {
+        color: #fff;
+      }
+
+      .footer {
+        padding: 4rem 0;
+        text-align: center;
       }
 
       .github-fork-ribbon {
@@ -23,15 +65,45 @@
       }
 
       .github-fork-ribbon:before {
-        background-color: #5185b3;
-      }
-
-      footer {
-        padding: 4rem 0;
+        background-color: #000;
       }
 
       .container {
         text-align: center;
+      }
+
+      .github-link {
+        font-size: 50px;
+      }
+
+      .fivefifteen-link {
+        margin-top: 50px !important;
+      }
+
+      .fivefifteen-footer-link img {
+        width: 150px;
+      }
+
+      .btns {
+        text-align: center;
+      }
+
+      .btn-custom {
+        color: #fff;
+        background-color: #000;
+        border-color: #000;
+        text-decoration: none;
+      }
+
+      .btn-custom:hover {
+        color: #fff;
+      }
+
+      .npm-install {
+        color: #000;
+        display: block;
+        font-size: 18px;
+        margin-top: 50px;
       }
 
       #main .container {
@@ -44,7 +116,7 @@
       }
 
       #main .container > div:focus {
-        outline: 1px solid #5185b3;
+        outline: 1px solid #000;
       }
 
       #main .container > div:not(:first-child) {
@@ -54,6 +126,12 @@
       ul {
         list-style-type: none;
         padding: 0;
+      }
+
+      code:not(.npm-install) {
+        color: #000;
+        border: 1px solid #000;
+        padding: 1px;
       }
     </style>
     <script type="text/javascript" src="dist/hashjump.min.js"></script>
@@ -96,15 +174,21 @@
     </script>
   </head>
   <body>
-    <a class="github-fork-ribbon" href="https://github.com/kodie/hashjump" data-ribbon="Check me out on GitHub" title="Check me out on GitHub">Check me out on GitHub</a>
+    <a class="github-fork-ribbon" href="https://github.com/fivefifteen/hashjump" data-ribbon="Check me out on GitHub" title="Check me out on GitHub">Check me out on GitHub</a>
 
-    <div class="jumbotron jumbotron-fluid">
+    <div class="header jumbotron jumbotron-fluid">
       <div class="container">
-        <h1 class="display-4">hashjump</h1>
+        <img src="./assets/hashjump-white.png" />
+        <h1 class="display-4">HashJump</h1>
         <p class="lead">A tiny, dependency-free JavaScript module for handling anchor links and scrolling elements into view.</p>
-        <p><a href="https://github.com/kodie/hashjump" target="_blank">https://github.com/kodie/hashjump</a></p>
-        <br /><br /><a href="#wide-mode">Toggle Page Wide-Mode</a>
+        <p class="fivefifteen-link"><a href="https://fivefifteen.com" target="_blank"><img src="./assets/fivefifteen.png" /><br /><b>A Five Fifteen Project</b></a></p>
       </div>
+    </div>
+
+    <div class="btns container">
+      <a href="https://github.com/fivefifteen/hashjump/archive/refs/heads/main.zip" class="btn btn-lg btn-custom" role="button">Download</a>
+      <a href="https://github.com/fivefifteen/hashjump" class="btn btn-lg btn-custom" target="_blank" role="button">GitHub/Documentation</a>
+      <code class="npm-install">npm install hashjump --save</code>
     </div>
 
     <div id="main">
@@ -117,7 +201,11 @@
             <li><a href="#section-3">Section 3</a></li>
             <li><a href="#section-4">Section 4</a></li>
             <li><a href="#section-5">Section 5</a></li>
-            <li><br /><br /><button type="button" class="btn btn-primary" onclick="hashjump.to('section-4')">Go to Section 4</button></li>
+            <li>
+              <br />
+              <button type="button" class="btn btn-custom" onclick="hashjump.to('section-4')">Go to Section 4</button>
+              <a href="#wide-mode" class="btn btn-custom">Toggle Page Wide-Mode</a>
+            </li>
           </ul>
         </div>
 
@@ -161,7 +249,9 @@
 
     <footer class="footer">
       <div class="container">
-        <span class="text-muted">&copy; <a href="https://kodieg.com" target="_blank">Kodie Grantham</a></span>
+        <p class="github-link"><a href="https://github.com/fivefifteen/hashjump" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a></p>
+        <p class="fivefifteen-footer-link"><a href="https://fivefifteen.com" target="_blank"><img src="./assets/fivefifteen.png" /></a></p>
+        <p class="copyright">&copy; <a href="https://fivefifteen.com" target="_blank">Five Fifteen</a></p>
       </div>
     </footer>
   </body>

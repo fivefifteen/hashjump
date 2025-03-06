@@ -1,12 +1,25 @@
-# hashjump
+<div align="center">
 
-[![npm package version](https://img.shields.io/npm/v/hashjump.svg?style=flat-square)](https://www.npmjs.com/package/hashjump)
-[![Travis build status](https://img.shields.io/travis/com/kodie/hashjump.svg?style=flat-square)](https://travis-ci.com/kodie/hashjump)
-[![npm package downloads](https://img.shields.io/npm/dt/hashjump.svg?style=flat-square)](https://www.npmjs.com/package/hashjump)
-[![code style](https://img.shields.io/badge/code_style-standard-yellow.svg?style=flat-square)](https://github.com/standard/standard)
-[![license](https://img.shields.io/github/license/kodie/hashjump.svg?style=flat-square)](license.md)
+  <a href="https://github.com/fivefifteen/hashjump">
+    <picture>
+      <source media="(prefers-color-scheme: dark)" srcset="./assets/hashjump-white.png">
+      <img src="./assets/hashjump.png" alt="HashJump">
+    </picture>
+  </a>
 
-A tiny, dependency-free JavaScript module for handling anchor links and scrolling elements into view.
+  # HashJump
+
+  A tiny, dependency-free, color input field helper that utilizes the native color picker.
+
+  [![npm package version](https://img.shields.io/npm/v/hashjump.svg?style=flat-square)](https://www.npmjs.com/package/hashjump)
+  [![npm package downloads](https://img.shields.io/npm/dt/hashjump.svg?style=flat-square)](https://www.npmjs.com/package/hashjumpp)
+  [![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/fivefifteen/hashjump?style=flat-square)](https://github.com/fivefifteen/hashjump)
+  [![code style](https://img.shields.io/badge/code_style-standard-yellow.svg?style=flat-square)](https://github.com/standard/standard)
+  [![license](https://img.shields.io/github/license/fivefifteen/hashjump.svg?style=flat-square)](license.md)
+
+  <a href="https://fivefifteen.com" target="_blank"><img src="./assets/fivefifteen.png" /><br /><b>A Five Fifteen Project</b></a>
+
+</div>
 
 
 ## Features
@@ -14,7 +27,7 @@ A tiny, dependency-free JavaScript module for handling anchor links and scrollin
 * Tiny (Around ~8kb minified)
 * Zero dependencies
 * Supports horizontal as well as vertical scrolling
-* Supports easing functions for scrolling animations (even custom ones so things like [d3-ease] are supported!)
+* Supports easing functions for scrolling animations (even custom ones so things like [d3-ease] are supported)
 * Supports custom functions for when anchor links are clicked or the page was visited with an anchor link
 * Scroll the window to bring your element to the center of the viewport (or any other position in the viewport)
 
@@ -29,7 +42,7 @@ Visit https://hashjump.js.org
 
 ### Manual Download
 
-[Download the latest version of hashjump](https://github.com/kodie/hashjump/archive/refs/heads/main.zip) and then place the following HTML in your page's head element:
+[Download the latest version of hashjump](https://github.com/fivefifteen/hashjump/archive/refs/heads/main.zip) and then place the following HTML in your page's head element:
 
 ```html
 <script type="text/javascript" src="dist/hashjump.min.js"></script>
@@ -38,10 +51,10 @@ Visit https://hashjump.js.org
 
 ### CDN (Courtesy of [jsDelivr](https://jsdelivr.com))
 
-Place the following HTML in your page's head element (check to make sure the version in the URLs are the version you want):
+Place the following HTML in your page's head element (check to make sure the version in the URL is the version you want):
 
 ```html
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/kodie/hashjump@0.0.1/dist/hashjump.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/fivefifteen/hashjump@0.1/dist/hashjump.min.js"></script>
 ```
 
 
@@ -59,17 +72,17 @@ const hashjump = require('hashjump')
 ```
 
 
-### [GPM](https://github.com/itsahappymedium/gpm)
+### [Fetcher](https://github.com/fivefifteen/fetcher)
 
 ```
-gpm install kodie/hashjump --save
+fetcher install fivefifteen/hashjump --save
 ```
 
 
 ### [Bower](https://bower.io)
 
 ```
-bower install kodie/hashjump --save
+bower install fivefifteen/hashjump --save
 ```
 
 
@@ -82,7 +95,7 @@ bower install kodie/hashjump --save
 
 `hashjump([opts])`
 
-Initializes hashjump for the defined `targetHashes` anchor links (or all anchor links if omitted). Sets page load and link click event handlers and saves `opts`.
+Initializes HashJump for the defined `targetHashes` anchor links (or all anchor links if omitted). Sets page load and link click event handlers and saves `opts`.
 
 *Note: If running this function multiple times, you should always call any instances with `targetHashes` set before calling an instance without (global instance).*
 
@@ -290,17 +303,13 @@ This is an example of the object that is passed to functions defined in the `act
 
 ## Related
 
- - [filebokz](https://github.com/kodie/filebokz) - A tiny, dependency-free, highly customizable and configurable, easy to use file input with some pretty sweet features.
+  - [ColorTap](https://github.com/fivefifteen/colortap) - A tiny, dependency-free, color input field helper that utilizes the native color picker.
 
- - [growfield](https://github.com/kodie/growfield) - A tiny, dependency-free JavaScript module for making textarea elements grow with their content.
+  - [FileBokz](https://github.com/fivefifteen/filebokz) - A tiny, dependency-free, highly customizable and configurable, easy to use file input with some pretty sweet features.
 
- - [kloner](https://github.com/kodie/kloner) - A tiny, dependency-free JavaScript module for cloning/repeating elements.
+  - [GrowField](https://github.com/fivefifteen/growfield) - A tiny, dependency-free JavaScript module for making textarea elements grow with their content.
 
- - [kolorfield](https://github.com/kodie/kolorfield) - A tiny, dependency-free, color input field helper that utilizes the native color picker.
-
- - [minitaur](https://github.com/kodie/minitaur) - The ultimate, dependency-free, easy to use, JavaScript plugin for creating and managing modals.
-
- - [peekfield](https://github.com/kodie/peekfield) - A dependency-free, easy to use, JavaScript plugin for hiding and showing fields.
+  - [Kloner](https://github.com/fivefifteen/kloner) - A tiny, dependency-free JavaScript module for cloning/repeating elements.
 
 
 ## License
