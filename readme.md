@@ -9,7 +9,7 @@
 
   # HashJump
 
-  A tiny, dependency-free, color input field helper that utilizes the native color picker.
+  A tiny, dependency-free JavaScript module for handling anchor links and scrolling elements into view.
 
   [![npm package version](https://img.shields.io/npm/v/hashjump.svg?style=flat-square)](https://www.npmjs.com/package/hashjump)
   [![npm package downloads](https://img.shields.io/npm/dt/hashjump.svg?style=flat-square)](https://www.npmjs.com/package/hashjumpp)
