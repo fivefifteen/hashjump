@@ -58,7 +58,7 @@
   }
 
   /*!
-    HashJump v0.1.0 (https://hashjump.js.org)
+    HashJump v0.1.1 (https://hashjump.js.org)
     by Five Fifteen (https://fivefifteen.com)
   */
 
