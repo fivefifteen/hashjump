@@ -58,7 +58,7 @@
   }
 
   /*!
-    HashJump v0.1.1 (https://hashjump.js.org)
+    HashJump v0.1.2 (https://hashjump.js.org)
     by Five Fifteen (https://fivefifteen.com)
   */
 
@@ -81,11 +81,9 @@
         history.replaceState(null, null, window.location.pathname);
       }
       if (!opts.ignoreEmptyHashes || onLoadHash) {
-        window.addEventListener('load', function () {
-          _hashjump.to(onLoadHash, Object.assign({
-            isOnLoad: true
-          }, opts));
-        });
+        _hashjump.to(onLoadHash, Object.assign({
+          isOnLoad: true
+        }, opts));
       }
     }
     if (opts.hashjumpLinks) {
