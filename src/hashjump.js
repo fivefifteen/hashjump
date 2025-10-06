@@ -34,9 +34,7 @@ const hashjump = (targetHashes, opts) => {
     }
 
     if (!opts.ignoreEmptyHashes || onLoadHash) {
-      window.addEventListener('load', () => {
-        hashjump.to(onLoadHash, Object.assign({ isOnLoad: true }, opts))
-      })
+      hashjump.to(onLoadHash, Object.assign({ isOnLoad: true }, opts))
     }
   }
 
